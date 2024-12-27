@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section container styles */
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section__title span {
+  color: var(--secondary-color);
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #2f4858;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  padding-top: 4rem;  /* Adjusted for fixed navbar */
+}
+
+/* Navbar styles */
+nav {
+  width: 100%;
+  background-color: #efe9e4; /* Match the header background color */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Distribute items between left and right */
+  align-items: center; /* Vertically center items */
+  position: fixed; /* Fix navbar at top */
+  top: 0; /* Ensure it's at the top */
+  left: 0;
+  z-index: 1000; /* Keep navbar above other content */
+}
+
+nav .nav__logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav .nav__logo a {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+nav .nav__logo a span {
+  color: #2f4858;
+}
+
+nav .nav__menu {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem; /* Adjust space between items */
+  flex-direction: row; /* Align items horizontally */
+  color: #2f4858;
+}
+
+nav .nav__menu li {
+  margin: 0;
+}
+
+nav .nav__menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav .nav__menu a:hover {
+  background-color: transparent; /* Remove background color */
+  color: whitesmoke; /* Make the text white */
+  text-decoration: underline; /* Add underline */
+  text-decoration-color: whitesmoke; /* Set underline color to white */
+}
+
+/* Header and other section styles */
+header {
+  height: 100vh;
+  background-color: #efe9e4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #9da79c;
+}
+
+.header__container p {
+  color: #2f4858;
+  max-width: 600px;
+  margin: 1rem;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+
+.header__container h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.header__container h2 {
+  color: #2f4858;
+}
+
+.header__container h1 span {
+  color: #2f4858;
+}
+
+.about,
+.project {
+  background-color: white;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__content h1, .about__details{
+  color:#2f4858 ;
+  font-family: "Poppins", sans-serif;
+ 
+
+}
+
+.about__details p{
+  text-align: justify;
+}
+
+.about__image,
+.about__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.about__image img {
+  max-width: 350px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.about__details {
+  padding: 2rem 0;
+  color: var(--text-light);
+  text-align: center;
+}
+
+
+
+.service,
+footer {
+  background-color: white;
+  
+}
+
+.service__grid,
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.service__card {
+  display: grid;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--text-dark);
+  border-radius: 5px;
+}
+
+.service__card i {
+  font-size: 1.5rem;
+}
+
+.service__card h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2f4858;
+}
+
+.service__card p {
+  color: var(--text-light);
+}
+
+.service__card .read__more {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.project__card a {
+  display: block;  /* Make anchor tag a block-level element */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit;  /* Inherit text color */
+}
+
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project__card {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden; /* Ensures the image doesn't overflow the card */
+}
+
+.project__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.project__card:hover .project__image {
+  transform: scale(1.05); /* Scale the image to make it "pop" */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow to give it more prominence */
+}
+
+.project__card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to the entire card */
+}
+
+
+.project__card h3 {
+  font-size: 1.5rem;
+  color: #2f4858;  
+}
+
+.section__title {
+  color: #2f4858;
+}
+
+.project__card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.read__more {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer__details {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social__icons .icon {
+  padding: 0.7rem;
+  border-radius: 15px;
+  color: #2f4858;
+  background-color: #efe9e4;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.social__icons .icon:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.footer__form {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__form :is(input, textarea) {
+  padding: 1rem;
+  background-color: var(--text-dark);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.footer__form textarea {
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__form button {
+  width: max-content;
+}
+
+/* Media queries */
+
+@media (min-width: 640px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+
+  .header__container p {
+    margin: 2rem 0;
+  }
+
+  .header__container h {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .action__btns {
+    gap: 2rem;
+  }
+
+  .about__container {
+    flex-direction: row;
+  }
+
+  .about__content {
+    align-items: flex-start;
+  }
+
+  .about__details {
+    text-align: left;
+  }
+
+  /* styles for  project section */
+.projects {
+  padding: 50px 0;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project__grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project__card, .service__card {
+  width: 30%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project__image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+ 
+}
+
+.read__more {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.read__more:hover {
+  color: #c8c7bd;
+}
+
+.more-text {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+  
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left; /* Align text to the left */
+}
+
+.footer__form :is(input, textarea) {
+  padding: 1rem;
+  background-color: var(--text-dark);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.footer__form textarea {
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__form button {
+  width: max-content;
+  margin-top: 10px; /* Added for spacing between button and form fields */
+  align-self: flex-start; /* Align button to the left */
+}
+
+/* Media queries */
+
+@media (min-width: 640px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+
+  .header__container p {
+    margin: 2rem 0;
+  }
+
+  .header__container h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .action__btns {
+    gap: 2rem;
+  }
+
+  .about__container {
+    flex-direction: row;
+  }
+
+  .about__content {
+    align-items: flex-start;
+  }
+
+  .about__details {
+    text-align: left;
+  }
+
+  /* styles for  project section */
+  .projects {
+    padding: 50px 0;
+  }
+
+  .section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .project__card, .service__card {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .project__image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .read__more {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .read__more:hover {
+    color: #c8c7bd;
+  }
+
+  .more-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #495057;
+    line-height: 1.6;
+  }
+
+  .footer__form {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left; /* Ensure text is left-aligned */
+  }
+
+  .footer__form input,
+  .footer__form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #495057;
+  }
+
+  .footer__form input:focus,
+  .footer__form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  .footer__form button {
+    background-color: #efe9e4;
+    color: #2f4858;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start; /* Align button to the left */
+  }
+
+  .footer__form button:hover {
+    background-color: whitesmoke;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .section__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__content {
+      display: flex;
+      justify-content: flex-start; /* Align content to the left */
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .footer__content h2 {
+      text-align: left; /* Align the heading to the left */
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--text-dark);
+    }
+    .footer__details {
+      color: #495057;
+    }
+    .footer__content p {
+      text-align: left; /* Align the paragraph to the left */
+      font-size: 1rem;
+      color: var(--text-dark);
+      margin-top: 10px;
+    }
+    
+    /* Add this part for the media queries if you want it to be left-aligned on mobile too */
+    @media screen and (max-width: 768px) {
+      .footer__content {
+        text-align: left; /* Ensure text is left-aligned on smaller screens */
+      }
+    }
+    
+
+  @media (min-width: 768px) {
+    .header__container h1 {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    .service__grid,
+    .project__grid,
+    .footer__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .service__grid,
+    .project__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}}}

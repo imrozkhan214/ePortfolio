@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Personal Portfolio Page</title>
+    
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#"><span>KhanFolio</span></a></div>
+      <ul class="nav__menu">
+        
+        <a href=".about">About</a>
+        <a href=".projects">Projects</a>
+        <a href=".contact">Contact Me</a>
+      </ul>
+    </nav>
+    <header>
+      <div class="section__container header__container">
+        <h1>Hello! I'm <span id="typewriter">Imroz Khan</span></h1>
+        <h2 class="section__title">A Junior in BS Computer Science.</h2>
+        <p>
+          This ePortfolio showcases my academic journey, technical skills, and the projects I've worked on. 
+          I am passionate about software development, particularly in web development, 
+          and I am eager to continue learning and contributing to the tech community.
+        </p>
+        <div class="action__btns">
+        </div>
+      </div>
+    </header>
+
+
+    <section class="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/about-bg.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+          <h1 class="section__title">About Me</h1>
+          <p class="about__details">
+            I’m a Computer Science student at the Univeristy of Science and Technology of Southern Philippines, 
+            passionate about technology and problem-solving. 
+            With experience in web development, automation, 
+            and AI, I focus on creating practical, user-friendly 
+            solutions. I’ve worked on projects involving web scraping, 
+            chatbot development, and process automation, and I’m always eager to learn new skills.
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="section__container project__container">
+        <p class="section__subtitle">Here are just some of them!</p>
+        <h2 class="section__title">My Projects</h2>
+        <div class="project__grid">
+    
+          <!-- Ustep File Transfer Project -->
+          <div class="project__card">
+            <a href="https://github.com/imrozkhan214/EasyFileTransfer" target="_blank">
+              <img src="assets/ustep_image.png" alt="USTEP Logo" class="project__image" />
+              <h3>Ustep File Transfer</h3>
+              <p>Technologies: Tkinter, Flask, Selenium, Python</p>
+              <p>This project is designed to automate the process of downloading course materials from the University of Science and Technology of Southern Philippines (USTP) USTEP portal.</p>
+            </a>
+            <p class="more-text">
+              Using a simple drag-and-drop UI built with Tkinter, users can easily upload files and select courses from which they wish to download resources. The project uses Flask for the backend and Selenium for automating web interactions, ensuring that the files are retrieved efficiently and that the file names in the UI match exactly those listed on the USTEP resource page. The solution provides a user-friendly interface that simplifies the downloading process, saving time for students.
+            </p>
+            <a href="javascript:void(0);" class="read__more" onclick="toggleReadMore(this)">Read more...</a>
+          </div>
+    
+          <!-- FIZIHChat Project -->
+          <div class="project__card">
+            <a href="https://github.com/imrozkhan214/FIZIHchat" target="_blank">
+              <img src="assets/fizih_pic.jpg" alt="FIZIHChat" class="project__image" />
+              <h3>FIZIHChat</h3>
+              <p>Technologies: Web Development, NLP, Chatbot Development</p>
+              <p>FIZIHchat is a chatbot admin interface designed to help businesses manage and deploy chatbots without requiring technical expertise.</p>
+            </a>
+            <p class="more-text">
+              The goal of the project is to improve customer satisfaction by providing businesses with a simple, customizable chatbot solution that can handle customer inquiries efficiently and consistently. By simplifying chatbot management, FIZIHchat empowers businesses to improve customer service, reduce costs, and enhance overall customer experience.
+            </p>
+            <a href="javascript:void(0);" class="read__more" onclick="toggleReadMore(this)">Read more...</a>
+          </div>
+    
+          <!-- FNA String Generator Project -->
+          <div class="project__card">
+            <a href="https://github.com/imrozkhan214/FNA-String-Generator" target="_blank">
+              <img src="assets/automata_image.PNG" alt="FNA String Generator" class="project__image" />
+              <h3>FNA String Generator</h3>
+              <p>Technologies: Automata Theory, Python</p>
+              <p>The FNA String Generator is a project based on automata theory, designed to generate strings according to predefined rules or patterns.</p>
+            </a>
+            <p class="more-text">
+              Using a finite automaton (FNA), the system processes input conditions and outputs strings that conform to the specifications of the automaton. The project focuses on the creation of an automaton that can generate strings in a structured, rule-based manner, making it a useful tool for understanding automata theory and its application in string generation. The solution can be applied to various fields such as pattern recognition and language processing.
+            </p>
+            <a href="javascript:void(0);" class="read__more" onclick="toggleReadMore(this)">Read more...</a>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+    <footer>
+      <section class="contact">
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h2 class="section__title"><span>Let’s Make Something Fun Together!</span></h2>
+          <p class="section__subtitle">Got an idea? I’m ready to bring it to life!</p>
+          <div class="footer__details">
+            <p>
+              Just fill out the contact form with your name, email, and 
+              message, and I’ll get back to you as soon as possible. 
+              Let’s create something amazing, whether near or far.
+            </p>
+            <p>Currently in Cagayan de Oro City, Misamis Oriental, Philippines</p>
+          
+          </div>
+          <div class="social__icons">
+            <a href="https://www.instagram.com/emrollsss/" class="icon"><i class="ri-instagram-fill"></i></a>
+            <a href="https://github.com/imrozkhan214" class="icon"><i class="ri-github-fill"></i></a>
+          </div>
+        </div>
+        <form class="footer__form">
+          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Your Email Address" />
+          <input type="text" placeholder="Your Phone Number" />
+          <textarea cols="30" rows="10" placeholder="Your Idea"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
